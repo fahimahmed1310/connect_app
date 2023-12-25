@@ -1,4 +1,5 @@
 import 'package:connect_app/utils/constants/color_constants.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -14,7 +15,7 @@ class WelcomeScreen extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: ColorConstants.transparentColor,
         title:  Padding(
-          padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.13),
+          padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.01),
           child: const Center(
             child: Image(
               image: AssetImage(
@@ -46,7 +47,7 @@ class WelcomeScreen extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * 0.03,
               ),
               const Text(
-                "Interact with individuals, spend time with loved ones.",
+                "Interact with peoples, spend time with loved ones.",
                 maxLines: 2,
                 style: TextStyle(
                   fontSize: 20,
@@ -139,14 +140,44 @@ class WelcomeScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.02,
+                height: MediaQuery.of(context).size.height * 0.03,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("")
+                  RichText(
+                    text: TextSpan(
+                      text: "Don't have any account?",
+                      style: const TextStyle(
+                          fontSize: 20,
+                          fontFamily: "Cabin",
+                        color: ColorConstants.blackColor
+                      ),
+                      children:  <TextSpan>[
+                        TextSpan(
+                            text: " Register",
+                            style: const TextStyle(
+                              fontFamily: "Cabin",
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold
+                            ),
+                            recognizer:  TapGestureRecognizer()
+                              ..onTap = () {
+                                // if(authProvider.isLoginPage == true){
+                                //   authProvider.isLoginPage = false;
+                                //   Navigator.push(context, MaterialPageRoute(builder: (context)=>const RegisterScreen()));
+                                // }else{
+                                //   authProvider.isLoginPage = true;
+                                //   Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
+                                // }
+                              }
+
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),

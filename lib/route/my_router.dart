@@ -8,8 +8,8 @@ class MyRouter{
 
    static List<GetPage> getRoutes(){
     return [
-      GetPage(name: RouteConstants.splashScreenRoute, page: () => SplashScreen()),
-      GetPage(name: RouteConstants.welcomeScreenRoute, page: () => WelcomeScreen()),
+      GetPage(name: RouteConstants.splashScreenRoute, page: () => const SplashScreen()),
+      GetPage(name: RouteConstants.welcomeScreenRoute, page: () => const WelcomeScreen())//transitionDuration:  Duration(seconds: 1),transition:Transition.rightToLeft),
     ];
   }
 

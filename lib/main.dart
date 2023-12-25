@@ -1,5 +1,5 @@
+import 'package:connect_app/helper/init_dependency.dart';
 import 'package:connect_app/route/my_router.dart';
-import 'package:connect_app/screens/splash_screen.dart';
 import 'package:connect_app/utils/constants/color_constants.dart';
 import 'package:connect_app/utils/constants/route_constants.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +15,7 @@ class ConnectApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      initialBinding: InitDependency(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         elevatedButtonTheme: ElevatedButtonThemeData(
