@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
 
-enum Pages{login, register}
+enum Pages{login, register, welcome}
 
 class WelcomeScreenController extends GetxController{
 
-  Pages? _pages = Pages.login;
+  Pages? _pages = Pages.welcome;
 
 
 

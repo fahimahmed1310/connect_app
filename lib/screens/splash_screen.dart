@@ -1,8 +1,10 @@
 import 'dart:async';
 
 import 'package:connect_app/screens/welcome_screen.dart';
+import 'package:connect_app/utils/constants/app_constants.dart';
 import 'package:connect_app/utils/constants/route_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -59,8 +61,9 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     return Scaffold(
       backgroundColor: animation!.value,
       body: const Center(
-        child: Image(
-          image: AssetImage("assets/images/logo.png"),
+        child: Icon(
+            FontAwesomeIcons.message,
+          size: 80,
         ),
       ),
     );
