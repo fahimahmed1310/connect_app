@@ -165,12 +165,19 @@ class LoginScreen extends StatelessWidget {
                                 bottom:
                                     MediaQuery.of(context).size.width * 0.04,
                               ),
-                              child: Text(
-                                "Login".toUpperCase(),
-                                style: const TextStyle(
-                                    fontFamily: "Cabin",
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
+                              child: InkWell(
+                                onTap: (){
+                                  Get.offAndToNamed(
+                                    RouteConstants.homeScreenRoute
+                                  );
+                                },
+                                child: Text(
+                                  "Login".toUpperCase(),
+                                  style: const TextStyle(
+                                      fontFamily: "Cabin",
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ),
                             ),
                           ),
@@ -183,7 +190,7 @@ class LoginScreen extends StatelessWidget {
                           child: RichText(
                             text: TextSpan(
                               text: "Don't have any account?",
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 20,
                                   fontFamily: "Cabin",
                                   color: ColorConstants.blackColor),

@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
     Timer(const Duration(seconds: 5), () {
       Get.offAndToNamed(
-        RouteConstants.welcomeScreenRoute,
+        RouteConstants.homeScreenRoute,
       );
     });
 

@@ -1,3 +1,4 @@
+import 'package:connect_app/screens/home_screen.dart';
 import 'package:connect_app/screens/login_screen.dart';
 import 'package:connect_app/screens/register_screen.dart';
 import 'package:connect_app/screens/splash_screen.dart';
@@ -14,6 +15,7 @@ class MyRouter{
       GetPage(name: RouteConstants.welcomeScreenRoute, page: () => const WelcomeScreen()),//transitionDuration:  Duration(seconds: 1),transition:Transition.rightToLeft),
       GetPage(name: RouteConstants.loginScreenRoute, page: () => const LoginScreen(),transitionDuration: const Duration(milliseconds: 500),transition:Transition.rightToLeft),
       GetPage(name: RouteConstants.registerScreenRoute, page: () => const RegisterScreen(),transitionDuration: const Duration(milliseconds: 500),transition:Transition.rightToLeft),
+      GetPage(name: RouteConstants.homeScreenRoute, page: () => const HomeScreen(),transitionDuration: const Duration(milliseconds: 500),transition:Transition.rightToLeft),
     ];
   }
 
