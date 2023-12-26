@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90179292738",
+    "project_id": "connect-app-af95a",
+    "storage_bucket": "connect-app-af95a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90179292738:android:74d4f786c7e35debbc27db",
+        "android_client_info": {
+          "package_name": "com.example.connect_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkMu7pS9yCNKdzMvb_AvxxxDA2VN4FWwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
