@@ -1,16 +1,3 @@
-# connect_app
+A social media app that enables users to communicate and interact with others through messaging features.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Connect is a demonstration social media platform, similar to a messenger, developed using Flutter and Dart. It allows users to engage and communicate with their friends or other connected individuals in real-time. The state management is implemented using Getx, while Firebase serves as the database. The user interface design is derived from figma, and the software architecture adheres to the MVVM pattern
